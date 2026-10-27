@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.studentgrademanager.ViewStudentsController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" styleClass="dark-mode" stylesheets="@../css/dashboard.css" VBox.vgrow="ALWAYS">
+         <children>
+            <Label alignment="CENTER" layoutX="328.0" layoutY="91.0" prefHeight="36.0" prefWidth="177.0" styleClass="header-title" text="View Students" textAlignment="CENTER">
+               <font>
+                  <Font name="Book Antiqua" size="24.0" />
+               </font>
+            </Label>
+            <TableView fx:id="studentsTable" layoutX="50.0" layoutY="152.0" prefHeight="371.0" prefWidth="800.0" styleClass="toggle-button" AnchorPane.bottomAnchor="118.39999999999998" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.799999999999955" AnchorPane.topAnchor="152.0">
+              <columns>
+                <TableColumn fx:id="idColumn" prefWidth="170.0" style="-fx-alignment: CENTER;" text="ID" />
+                <TableColumn fx:id="nameColumn" prefWidth="170.0" text="Name" />
+                  <TableColumn fx:id="gradeColumn" prefWidth="170.0" text="Grade" />
+                  <TableColumn fx:id="averageColumn" prefWidth="170.0" style="- fx-background-color: transparent;" text="Average" />
+              </columns>
+            </TableView>
+            <Button fx:id="backButton" layoutX="327.0" layoutY="510.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="50.0" prefWidth="178.0" styleClass="nav-button" text="Back" textAlignment="CENTER" AnchorPane.bottomAnchor="39.60000000000002" AnchorPane.leftAnchor="327.0" AnchorPane.rightAnchor="305.0">
+               <font>
+                  <Font name="Book Antiqua" size="24.0" />
+               </font>
+            </Button>
+            <HBox layoutY="1.0">
+               <children>
+                  <Pane prefHeight="55.0" prefWidth="810.0" styleClass="header">
+                     <children>
+                        <Button fx:id="dashboardButton" layoutX="535.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleDashboard" styleClass="toggle-button" text="Dashboard" />
+                        <Button fx:id="addInfoButton" layoutX="644.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleAddInfo" styleClass="toggle-button" text="Add Info" />
+                        <Button fx:id="homeButton" layoutX="734.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleHome" styleClass="toggle-button" text="Home" />
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

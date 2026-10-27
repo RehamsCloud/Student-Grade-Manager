@@ -1,0 +1,9 @@
+com\mycompany\StudentGradeManager\Grade.class
+com\mycompany\StudentGradeManager\AddStudentController.class
+com\mycompany\StudentGradeManager\AddGradeController.class
+com\mycompany\StudentGradeManager\StudentGradeManager.class
+com\mycompany\StudentGradeManager\Student.class
+com\mycompany\StudentGradeManager\LoginController.class
+com\mycompany\StudentGradeManager\DashboardController.class
+com\mycompany\StudentGradeManager\ViewStudentsController.class
+com\mycompany\StudentGradeManager\ViewReportsController.class

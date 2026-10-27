@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.studentgrademanager.AddStudentController">
+   <top>
+      <HBox prefHeight="70.0" prefWidth="763.0" styleClass="root" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="55.0" prefWidth="810.0" styleClass="header">
+               <children>
+                  <Button fx:id="DashboardButton" layoutX="500.0" layoutY="15.0" mnemonicParsing="false" onAction="#goToDashboard" styleClass="toggle-button" text="Dashboard" />
+                  <Button fx:id="AddGradeButton" layoutX="610.0" layoutY="15.0" mnemonicParsing="false" onAction="#goToAddGrades" styleClass="toggle-button" text="Add Grades" />
+                  <Button fx:id="returnHomeButton" layoutX="725.0" layoutY="15.0" mnemonicParsing="false" onAction="#goToHome" styleClass="toggle-button" text="Home" />
+               </children>
+            </Pane>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </HBox>
+   </top>
+   <center>
+      <VBox alignment="CENTER" prefHeight="378.0" prefWidth="800.0" styleClass="card" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" styleClass="header-subtitle" text="Student Name" textAlignment="CENTER" textOverrun="CLIP">
+               <font>
+                  <Font name="Calisto MT Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="15.0" right="109.0" top="80.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="studentNameText" maxWidth="200.0" onAction="#saveStudent">
+               <padding>
+                  <Insets bottom="15.0" />
+               </padding>
+            </TextField>
+            <Label styleClass="header-subtitle" text="Student ID">
+               <font>
+                  <Font name="Calisto MT Bold" size="18.0" />
+               </font>
+               <padding>
+                  <Insets top="15.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="15.0" right="134.0" top="15.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="studentIDText" maxWidth="200.0" onAction="#saveStudent">
+               <padding>
+                  <Insets bottom="15.0" />
+               </padding>
+            </TextField>
+            <Label fx:id="errorLabel" styleClass="header-subtitle" textFill="#dc0f0f">
+               <font>
+                  <Font name="Calisto MT Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="15.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <Pane prefHeight="110.0" prefWidth="200.0" styleClass="header" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="enter" alignment="CENTER" contentDisplay="CENTER" layoutX="330.0" layoutY="30.0" mnemonicParsing="false" onAction="#saveStudent" prefHeight="40.0" prefWidth="153.0" styleClass="toggle-button" text="Enter" />
+         </children>
+      </Pane>
+   </bottom>
+</BorderPane>
+

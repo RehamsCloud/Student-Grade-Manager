@@ -1,0 +1,129 @@
+/* first mode witch is the duafol or "light mode " */
+
+.root {
+    -fx-background-color: #f8f9fa;
+    -fx-font-family: "Arial";
+}
+
+.header {
+    -fx-background-color: #1a3a5c;
+    -fx-padding: 15 20;    /* lnner spacing 15 top&bottom - 20 left&right */
+}
+
+.header-title {
+    -fx-text-fill: white;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+.header-subtitle {
+    -fx-text-fill: #2dd4bf;
+    -fx-font-size: 14px;
+}
+
+.card {
+    -fx-background-color: white;
+    -fx-padding: 20;  /* lnner spacing 20 top&bottom - left&right */
+    -fx-background-radius: 12;  /* make the background corners rounded 12 radius */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 3); /* add shadow effect */
+}
+
+.card-title {
+    -fx-text-fill: #666666;
+    -fx-font-size: 13px;
+}
+
+.card-value {
+    -fx-text-fill: #1a3a5c;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+}
+
+.nav-button {
+    -fx-background-color: #1a3a5c;
+    -fx-text-fill: white;
+    -fx-padding: 12 25; /* lnner spacing 12 top&bottom - 25 left&right */
+    -fx-background-radius: 8; /* make the background corners rounded 8 radius */
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-pref-width: 720;
+}
+
+.nav-button:hover {   /* Changes style when mouse is over the button */
+    -fx-background-color: #2dd4bf;
+}
+
+.toggle-button {
+    -fx-background-color: transparent; /* make background fully transparent */
+    -fx-text-fill: white;
+    -fx-border-color: white; /* Border color set to white */
+    -fx-border-radius: 8;  /* Rounded corners for border */
+    -fx-background-radius: 8; /* Rounded corners for background */
+    -fx-font-size: 13px;
+    -fx-padding: 8 15;  /* lnner spacing 8 top&bottom - 15 left&right */
+}
+
+.table-custom {
+    -fx-background-color: transparent;
+    -fx-border-color: #2dd4bf;
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 8 15;
+}
+
+
+.toggle-button:hover { /* Changes style when mouse is over the button -slight transparency- */
+    -fx-background-color: rgba(255,255,255,0.1);
+}
+
+
+.text-field, .password-field {  /*  Login Screen */
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: #1a3a5c;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 10;
+}
+.login-title {
+    -fx-text-fill: #1a3a5c;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+.dark-mode .login-title {
+    -fx-text-fill: white;
+}
+
+/* second mode it is the "dark mode" */
+
+.dark-mode .toggle-button {
+    -fx-border-color: #2dd4bf;
+    -fx-text-fill: #2dd4bf;
+}
+
+.dark-mode  {
+    -fx-background-color: #0a1628;
+}
+
+
+.dark-mode .header {
+    -fx-background-color: #0d1f3c;
+}
+
+.dark-mode .card {
+    -fx-background-color: #1a2a4a;
+}
+
+.dark-mode .card-value {
+    -fx-text-fill: white;
+}
+
+.dark-mode .card-title {
+    -fx-text-fill: #aaaaaa;
+}
+
+.dark-mode .nav-button {
+    -fx-background-color: #2dd4bf;
+    -fx-text-fill: #0a1628;
+}
