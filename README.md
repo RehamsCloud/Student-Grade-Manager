@@ -28,17 +28,19 @@ A robust, full-featured desktop application built with **Java** and **JavaFX** d
 
 ### Running via Maven Terminal
 Open your terminal inside the project root directory and run:
-```bash
+bash
 mvn clean javafx:run
 
+---
 ### Screen Showcase
 | Screen Name | Light Mode | Dark Mode |
 | :--- | :---: | :---: |
-| **Login Screen** | ![Login Light](images/login-light.png) | ![Login Dark](images/login-dark.png) |
-| **Dashboard** | ![Dashboard Light](images/dashboard-light.png) | ![Dashboard Dark](images/dashboard-dark.png) |
-| **View Students** | ![Students Light](images/students-light.png) | ![Students Dark](images/students-dark.png) |
-| **Add Student / Grade** | ![Add Light](images/add-light.png) | ![Add Dark](images/add-dark.png) |
-| **View Reports** | ![Reports Light](images/reports-light.png) | ![Reports Dark](images/reports-dark.png) |
+| **Login Screen** | <img src="StudentGradeManager/images/login.png" width="300"> | /
+| **Dashboard** | <img src="StudentGradeManager/images/dashboard-light.png" width="300"> | <img src="StudentGradeManager/images/dashboard-dark.png" width="300"> |
+| **Add Student** | <img src="StudentGradeManager/images/add student-light.png" width="300"> | <img src="StudentGradeManager/images/add student-dark.png" width="300"> |
+| **Add Grade** | <img src="StudentGradeManager/images/add grade-light.png" width="300"> | <img src="StudentGradeManager/images/add grade-dark.png" width="300"> |
+| **View Students** | <img src="StudentGradeManager/images/view student-light.png" width="300"> | <img src="StudentGradeManager/images/view student-dark.png" width="300"> |
+| **View Reports** | <img src="StudentGradeManager/images/view report-light.png" width="300"> | <img src="StudentGradeManager/images/view report-dark.png" width="300"> |
 
 ---
 
