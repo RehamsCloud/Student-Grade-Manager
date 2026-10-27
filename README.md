@@ -50,7 +50,7 @@ This project was successfully developed collaboratively by the following team me
 
 | Name | Role | Responsibilities & Contributions |
 | :--- | :--- | :--- |
-| **Reham Wan** | Project Leader & Developer | Led the team coordination, developed the **Add Student** interface, implemented the `Student` model class, and built its corresponding controller. |
+| **[Reham Wan-Deraman](https://github.com/RehamsCloud)** | Project Leader & Developer | Led the team coordination, developed the **Add Student** interface, implemented the `Student` model class, and built its corresponding controller. |
 | **Maram Aljahdali** | UI/UX & Dashboard Developer | Designed and developed the **Dashboard** interface, created the core global **CSS stylesheet** applied across the entire project, and built its controller. |
 | **Rowaina Alharbi** | Authentication Developer | Developed the **Login** screen, implemented authentication logic, value validation, and its corresponding controller. |
 | **Rafah Alsharif** | Grade Management Developer | Developed the **Add Grade** interface, implemented the `Grade` model class, and built its corresponding controller. |
